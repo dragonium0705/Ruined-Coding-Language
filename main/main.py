@@ -1,3 +1,6 @@
-import lexer
+from lexer import Lexer
 
-test = lexer.Lexer("Hi")
+def ruined_compile(source):
+	test = Lexer(source).parse()
+	
+ruined_compile("Hello\nWorld")
